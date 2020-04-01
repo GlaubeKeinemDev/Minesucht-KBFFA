@@ -1,0 +1,7 @@
+name: KnockbackFFA-Minesucht
+version: 1.0
+author: GlaubeKeinemDev
+main: de.glaubekeinemdev.kbffa.KnockBackFFA
+commands:
+  kbffa:
+  build:

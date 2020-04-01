@@ -1,0 +1,58 @@
+######################################################
+#                                                    #
+#           KnockbackFFA wie auf Minesucht           #
+#                  Programmiert von                  #
+#                   GlaubeKeinemDev                  #
+#                                                    #
+######################################################
+
+# Setze allgemeine Einstellungen für das Plugin
+#
+# prefix - Setze den Prefix für das Plugin
+# no_permission - Nachricht wenn ein Spieler zu wenig Rechte hat
+# command_kbffa_permission - Die benötigte Permission für den /kbffa Command
+# command_build_permission - Die benötigte Permission für den /build Command
+# setScoreboard - Wenn deaktiviert, Plugin setzt kein Scoreboard
+# setScoreboardDelayed - Setzt das Scoreboard (Sidebar) verzögert um Bugs mit der Tablist zu vermeiden
+# usePlayersScoreboard - Funktioniert nur wenn die Tablist auch auf einem Scoreboard passiert!
+# setMapAsMotd - Setzt die Map als MOTD
+# serverName - Der Name deines Servers
+# mapPickInterval - Das Interval in dem eine neue Map gezogen wird in Minuten
+# pickRandomMap - Wenn deaktiviert, wird es nur eine Map geben auf der man spielt
+# allowTeams - Wird im Scoreboard angezeigt
+# quitMessage - Die Nachricht wenn ein Spieler den Server verlässt ("null" um es zu deaktivieren)
+# joinMessage - Die Nachricht wenn ein Spieler den Server betritt ("null" um es zu deaktivieren)
+# deathMessage - Setze die Nachricht für einen Spieler der gerade stirbt! ("null" um es zu deaktivieren)
+# killMessage - Setze die Nachricht für einen Spieler der gerade einen anderen Spieler getötet hat! ("null" um es zu deaktivieren)
+# suicideMessage - Setze die Nachricht für einen Spieler der sich gerade selbst umgebracht hat! ("null" um es zu deaktivieren)
+#
+settings:
+  prefix: "&8[&4KnockbackFFA&8] &7"
+  no_permission: "%prefix% Nicht genügend Rechte!"
+  command_kbffa_permission: "system.command.kbffa"
+  command_build_permission: "system.command.build"
+  setScoreboard: true
+  setScoreboardDelayed: false
+  usePlayersScoreboard: false
+  setMapAsMotd: true
+  serverName: "Deinserver.de"
+  mapPickInterval: 10
+  pickRandomMap: true
+  allowTeams: false
+  quitMessage: "null"
+  joinMessage: "null"
+  deathMessage: "%prefix% %&7Du wurdest von &e%target% &7getötet&8!"
+  suicideMessage: "%prefix% &7Du hast Selbstmord begangen"
+  killMessage: "%prefix% &7Du hast &e%target% &7getötet&8."
+
+
+# Setze die MySQL Zugangsdaten!
+#
+# Wenn deaktiviert, Statistiken etc. funktionieren nicht
+database:
+  useMySQL: false
+  username: "root"
+  password: "password"
+  database: "kbffa"
+  port: 3306
+  host: "localhost"
