@@ -2,6 +2,7 @@ package de.glaubekeinemdev.kbffa.listener;
 
 import de.glaubekeinemdev.kbffa.KnockBackFFA;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -47,7 +48,18 @@ public class PlayerJoinListener implements Listener {
         if(KnockBackFFA.getInstance().getCurrentMap() == null) {
             player.sendMessage( KnockBackFFA.PREFIX + "Es wurde noch keine Map eingerichtet!" );
         } else {
-            player.teleport( KnockBackFFA.getInstance().getCurrentMap().getSpawnLocation().toLocation() );
+            final Location location = KnockBackFFA.getInstance().getCurrentMap().getSpawnLocation().toLocation();
+
+            player.teleport( location );
+
+            if(KnockBackFFA.getInstance().getConfig().getBoolean( "settings.bypassMultiverse" )) {
+                new BukkitRunnable() {
+                    @Override
+                    public void run( ) {
+                        player.teleport( location );
+                    }
+                }.runTaskLater( KnockBackFFA.getInstance(), 5 );
+            }
         }
 
         Bukkit.getOnlinePlayers().forEach( players -> KnockBackFFA.getInstance().getBoardManager().updateOnlineCount( players ) );

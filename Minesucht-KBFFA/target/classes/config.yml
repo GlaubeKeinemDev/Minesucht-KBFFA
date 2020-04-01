@@ -15,6 +15,7 @@
 # setScoreboard - Wenn deaktiviert, Plugin setzt kein Scoreboard
 # setScoreboardDelayed - Setzt das Scoreboard (Sidebar) verzögert um Bugs mit der Tablist zu vermeiden
 # usePlayersScoreboard - Funktioniert nur wenn die Tablist auch auf einem Scoreboard passiert!
+# bypassMultiverse - Teleportiert den Spieler zweimal um Multiverse Firstspawn zu bypassen
 # setMapAsMotd - Setzt die Map als MOTD
 # serverName - Der Name deines Servers
 # mapPickInterval - Das Interval in dem eine neue Map gezogen wird in Minuten
@@ -34,6 +35,7 @@ settings:
   setScoreboard: true
   setScoreboardDelayed: false
   usePlayersScoreboard: false
+  bypassMultiverse: false
   setMapAsMotd: true
   serverName: "Deinserver.de"
   mapPickInterval: 10

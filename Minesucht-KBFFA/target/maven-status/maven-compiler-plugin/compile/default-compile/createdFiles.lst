@@ -14,6 +14,7 @@ de\glaubekeinemdev\kbffa\utils\ItemBuilder.class
 de\glaubekeinemdev\kbffa\database\PlayerStats.class
 de\glaubekeinemdev\kbffa\utils\fetchers\GameProfileBuilder$GameProfileSerializer.class
 de\glaubekeinemdev\kbffa\utils\MapPicker$1.class
+de\glaubekeinemdev\kbffa\listener\PlayerJoinListener$2.class
 de\glaubekeinemdev\kbffa\database\DatabaseHandler.class
 de\glaubekeinemdev\kbffa\KnockBackFFA$1.class
 de\glaubekeinemdev\kbffa\utils\fetchers\UUIDTypeAdapter.class
