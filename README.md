@@ -1,5 +1,5 @@
 # Minesucht-KBFFA
-KnockbackFFA wie auf Mineuscht (Sourcecode)
+KnockbackFFA wie auf Mineuscht
 
 DE:
 
